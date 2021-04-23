@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  background: #040190;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.replay {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f6f6f6;
+  color: #222;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.replay:hover {
+  background-color: #866eff;
+  color: #f6f6f6;
+}
+
+.board {
+  background-color: #0d09f8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.board-tile {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-shadow: 2px 2px 8px #b89efd;
+  color: #10009c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.board-tile:hover {
+  background-color: #fff;
+}
+
+.board-winner {
+  color: #009c5b;
+  text-shadow: 2px 2px 8px #49ffb3;
+}
